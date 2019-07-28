@@ -4,6 +4,7 @@ function showPic(whichpic){
   placeholder.setAttribute("src",source)
   var text = whichpic.getAttribute('title');
   var description = document.getElementById('description');
+  console.log(description.firstChild);
   description.firstChild.nodeValue = text;
   // description.innerHTML('text');
 }
