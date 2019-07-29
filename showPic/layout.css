@@ -27,3 +27,18 @@
     display:block;
     clear:both;
   }
+  a{
+    color: #c60;
+    background-color:transparent;
+    font-weight:bold;
+    text-decoration: none;
+  }
+  #imagegallery{
+    list-style:none;
+  }
+  #imagegallery li{
+    display:inline;
+  }
+  #imagegallery li a img{
+    border:0;
+  }
