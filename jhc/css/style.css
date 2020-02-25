@@ -2,24 +2,65 @@
     padding:0;
     margin:0;
 }
-#container{
-    width:100%;
-    height: 950px;
+.clearfix::before,.clearfix::after{
+    display: table;
+    content: '';
 }
-#top{
-    width:100%;
-    height: 10%;
-    background-color: blue;
+.clearfix::after{
+    clear: both;
 }
-#menu{
-    width:30%;
-    height: 90%;
-    background-color:red;
-    float:left;
+.clearfix{
+    *zoom: 1;
 }
-#zhuye{
-    width:70%;
-    height: 90%;
-    background-color: aquamarine;
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* 页面头部 */
+.haeder1{
+    width: 1240px;
+    /* line-height: 0; */
+    margin: 0 auto;
+    background: pink;
+    overflow: hidden;
+}
+.logo{
     float: left;
+}
+.logo img{
+	vertical-align: top;
+}
+.zhaoren{
+    font-size: 13px;
+    float: right;
+    margin: 15px 0 11px;
+}
+/* 导航栏 */
+nav{
+    height: 35px;
+    background-color: brown;
+    line-height: 35px;
+    overflow: hidden;
+}
+nav div{
+    width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    float: left;
+}
+nav li a{
+    height: 35px;
+    display: inline-block;
+    padding: 0 20px;
+    color: #fff;
+}
+nav li a:hover{
+    background: #000;
 }
