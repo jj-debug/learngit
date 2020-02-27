@@ -13,29 +13,65 @@
     *zoom: 1;
 }
 a{
-    text-decoration: none;
+    text-decoration: none;  /* 取消超链接的下划线 */
 }
 li{
-    list-style: none;
+    list-style: none;    /* 取消列表前的小圆点 */
+}
+.container{
+    margin: 0 auto;
+}
+input{
+    box-sizing: border-box;
 }
 /* 页面头部 */
 .haeder1{
     width: 1240px;
     /* line-height: 0; */
     margin: 0 auto;
-    background: pink;
+    /* background: pink; */
     overflow: hidden;
 }
 .logo{
     float: left;
 }
 .logo img{
-	vertical-align: top;
+	vertical-align: top;   /* 盒子含图片高出几像素 */
 }
 .zhaoren{
+    color: #000;
     font-size: 13px;
     float: right;
     margin: 15px 0 11px;
+    /* font-size: 10px; */
+}
+.search{
+    width: 1040px;
+    /* height: 26px; */
+    float: right;
+    /* overflow: hidden; */
+}
+.search form{
+    float: right;
+    height: 26px;
+}
+.search form input[type='text']{
+    border: 0;
+    outline: none;
+    color: #4c4c4c;
+    background: url(../image/sousuo.jpg) no-repeat 0 0;
+    height: 26px;
+    width: 146px;
+    border-radius: 0 13px 13px 0;
+    float: left;      /* 向左浮动取消行内块元素input间隙 */
+}
+.search form input[type='submit']{
+    border:0;
+    background: url(../image/sousuo01.jpg) no-repeat 0 0;
+    height: 26px;
+    width: 35px;
+    border-radius: 13px 0 0 13px;
+    float: left;      /* 向左浮动取消行内块元素input间隙 */
 }
 /* 导航栏 */
 nav{
@@ -56,6 +92,7 @@ nav li{
     float: left;
 }
 nav li a{
+    font-size: 14px;
     height: 35px;
     display: inline-block;
     padding: 0 20px;
@@ -63,4 +100,8 @@ nav li a{
 }
 nav li a:hover{
     background: #000;
+}
+/* banner部分 */
+.banner-nei{
+    width: 1240px;
 }
